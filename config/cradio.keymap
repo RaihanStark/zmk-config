@@ -88,7 +88,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│ RESET    │  CS2     │  DEFAULT │   DTAA   │PROFILE 0 │   │    F1    │    F2    │    F3    │    F4    │    F5    │
-           &sys_reset  &to 4     &to 0         &to 5   &bt BT_SEL 0    &kp F1     &kp F2     &kp F3     &kp F4     &kp F5    
+           &sys_reset  &tog 4     &tog 0        &tog 5   &bt BT_SEL 0    &kp F1     &kp F2     &kp F3     &kp F4     &kp F5    
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│BOOTLOADER│  OUT_USB │ OUT_BLE  │          │PROFILE 1 │   │    F6    │    F7    │    F8    │    F9    │   F10    │
           &bootloader &out OUT_USB &out OUT_BLE &trans &bt BT_SEL 1    &kp F6     &kp F7     &kp F8     &kp F9     &kp F10    
@@ -127,8 +127,8 @@
         //│  SHIFT   │    A     │    S     │    D     │    F     │   │    H     │    J     │    K     │    L     │    ;     │
            &kp LSHIFT    &kp A     &kp S     &kp D     &kp F          &kp H      &kp J      &kp K      &kp L      &kp SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│    Z     │    X     │    C     │    V     │    B     │   │    N     │    M     │    ,     │    .     │    /     │
-            &kp Z       &kp X     &kp C     &kp V     &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
+        //│    Z     │    X     │    C     │    V     │    B     │   │    N     │    M     │    ,     │    .     │          │
+            &kp Z       &kp X     &kp C     &kp V     &kp B          &kp N      &kp M      &kp COMMA  &kp DOT       &tog 5
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             &kp LCTRL  &kp SPACE       &kp ENTER  &kp ESC
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
